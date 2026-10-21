@@ -1,0 +1,80 @@
+unittest.case.FunctionTestCase (run)
+Supplied engine: test_crash_recovery_from_wal ... ok
+unittest.case.FunctionTestCase (run)
+Supplied engine: test_crdt_concurrent_merge_converges ... ok
+unittest.case.FunctionTestCase (run)
+Supplied engine: test_duplicate_retries_collapse ... ok
+unittest.case.FunctionTestCase (run)
+Supplied engine: test_stuck_debit_reverses_and_allows_retry ... ok
+unittest.case.FunctionTestCase (run)
+Supplied engine: test_vector_clock_causality ... ok
+test_all_orders_converge (test_core.CrdtLaws.test_all_orders_converge) ... ok
+test_causally_newer_wins (test_core.CrdtLaws.test_causally_newer_wins) ... ok
+test_core01_audit_counterexample (test_core.CrdtLaws.test_core01_audit_counterexample) ... ok
+test_legacy_record_without_new_fields_loads (test_core.CrdtLaws.test_legacy_record_without_new_fields_loads) ... ok
+test_semilattice_laws_randomized (test_core.CrdtLaws.test_semilattice_laws_randomized) ... ok
+test_terminal_conflict_is_flagged_and_deterministic (test_core.CrdtLaws.test_terminal_conflict_is_flagged_and_deterministic) ... ok
+test_complete_record_missing_newline_is_kept_and_next_append_safe (test_core.EngineFixes.test_complete_record_missing_newline_is_kept_and_next_append_safe) ... ok
+test_core03_empty_or_blank_proofs_rejected (test_core.EngineFixes.test_core03_empty_or_blank_proofs_rejected) ... ok
+test_core04_returned_state_is_current (test_core.EngineFixes.test_core04_returned_state_is_current) ... ok
+test_core05_every_truncation_point_recovers (test_core.EngineFixes.test_core05_every_truncation_point_recovers) ... ok
+test_core05_torn_tail_recovered_and_archived (test_core.EngineFixes.test_core05_torn_tail_recovered_and_archived) ... ok
+test_core06_local_terminal_is_absorbing (test_core.EngineFixes.test_core06_local_terminal_is_absorbing) ... ok
+test_core06_settled_not_replaced_by_remote_refunded_and_survives_restart (test_core.EngineFixes.test_core06_settled_not_replaced_by_remote_refunded_and_survives_restart) ... ok
+test_idempotency_survives_restart (test_core.EngineFixes.test_idempotency_survives_restart) ... ok
+test_mid_file_corruption_still_fails_loudly (test_core.EngineFixes.test_mid_file_corruption_still_fails_loudly) ... ok
+test_reconcile_after_restart_does_not_crash_on_failed (test_core.EngineFixes.test_reconcile_after_restart_does_not_crash_on_failed) ... ok
+test_reconcile_and_concurrent_transition_do_not_deadlock (test_core.EngineFixes.test_reconcile_and_concurrent_transition_do_not_deadlock) ... ok
+test_reconcile_on_remote_failed_state_does_not_raise (test_core.EngineFixes.test_reconcile_on_remote_failed_state_does_not_raise) ... ok
+test_wal_roundtrip_preserves_new_fields (test_core.EngineFixes.test_wal_roundtrip_preserves_new_fields) ... ok
+test_core02_concurrent_duplicate_gets_real_result (test_core.Idempotency.test_core02_concurrent_duplicate_gets_real_result) ... ok
+test_many_threads_single_execution (test_core.Idempotency.test_many_threads_single_execution) ... ok
+test_waiter_takes_over_when_first_fails (test_core.Idempotency.test_waiter_takes_over_when_first_fails) ... ok
+test_report_approve_and_csrf_over_http (test_agent.AgentHttpTests.test_report_approve_and_csrf_over_http) ... ok
+test_actions_outside_allowlist_are_stripped (test_agent.AgentTests.test_actions_outside_allowlist_are_stripped) ... ok
+test_approval_executes_and_is_audited (test_agent.AgentTests.test_approval_executes_and_is_audited) ... ok
+test_awaiting_confirmation_proposes_credit_and_settles (test_agent.AgentTests.test_awaiting_confirmation_proposes_credit_and_settles) ... ok
+test_conflicting_terminals_are_never_actioned (test_agent.AgentTests.test_conflicting_terminals_are_never_actioned) ... ok
+test_disconnected_devices_propose_reconnect (test_agent.AgentTests.test_disconnected_devices_propose_reconnect) ... ok
+test_healthy_payment_has_no_action (test_agent.AgentTests.test_healthy_payment_has_no_action) ... ok
+test_llm_planner_can_reword_and_drop_but_not_add_or_invent (test_agent.AgentTests.test_llm_planner_can_reword_and_drop_but_not_add_or_invent) ... ok
+test_llm_planner_falls_back_on_garbage_and_cannot_touch_high_severity (test_agent.AgentTests.test_llm_planner_falls_back_on_garbage_and_cannot_touch_high_severity) ... ok
+test_proposal_cannot_be_replayed_or_forged (test_agent.AgentTests.test_proposal_cannot_be_replayed_or_forged) ... ok
+test_proposal_goes_stale_when_payment_changes (test_agent.AgentTests.test_proposal_goes_stale_when_payment_changes) ... ok
+test_proposal_id_is_bound_to_payment_state (test_agent.AgentTests.test_proposal_id_is_bound_to_payment_state) ... ok
+test_refund_pending_is_explained_and_proposed_but_not_executed (test_agent.AgentTests.test_refund_pending_is_explained_and_proposed_but_not_executed) ... ok
+test_app_js_uses_events_not_steady_polling (test_product.EventStreamTests.test_app_js_uses_events_not_steady_polling) ... ok
+test_invalid_host_cannot_open_stream (test_product.EventStreamTests.test_invalid_host_cannot_open_stream) ... ok
+test_stream_headers_and_push_on_change_only (test_product.EventStreamTests.test_stream_headers_and_push_on_change_only) ... ok
+test_two_listeners_both_notified (test_product.EventStreamTests.test_two_listeners_both_notified) ... ok
+test_assets_and_content_security_headers (test_product.HttpTests.test_assets_and_content_security_headers) ... ok
+test_block_cross_origin_and_missing_csrf (test_product.HttpTests.test_block_cross_origin_and_missing_csrf) ... ok
+test_create_retry_and_export_over_http (test_product.HttpTests.test_create_retry_and_export_over_http) ... ok
+test_host_header_and_private_paths (test_product.HttpTests.test_host_header_and_private_paths) ... ok
+test_malformed_json_and_content_type (test_product.HttpTests.test_malformed_json_and_content_type) ... ok
+test_bad_id_scenario_and_note (test_product.ProductTests.test_bad_id_scenario_and_note) ... ok
+test_concurrent_requests_are_serialized (test_product.ProductTests.test_concurrent_requests_are_serialized) ... ok
+test_confirm_before_timeout (test_product.ProductTests.test_confirm_before_timeout) ... ok
+test_csv_contains_integer_money_and_neutralizes_formula (test_product.ProductTests.test_csv_contains_integer_money_and_neutralizes_formula) ... ok
+test_decline_has_no_debit_and_safe_retry (test_product.ProductTests.test_decline_has_no_debit_and_safe_retry) ... ok
+test_duplicate_refund_is_noop (test_product.ProductTests.test_duplicate_refund_is_noop) ... ok
+test_duplicate_request_has_one_debit (test_product.ProductTests.test_duplicate_request_has_one_debit) ... ok
+test_illegal_refund_is_rejected (test_product.ProductTests.test_illegal_refund_is_rejected) ... ok
+test_instant_both_devices_settle (test_product.ProductTests.test_instant_both_devices_settle) ... ok
+test_interrupted_journey_starts_disconnected (test_product.ProductTests.test_interrupted_journey_starts_disconnected) ... ok
+test_late_credit_is_blocked_after_reversal (test_product.ProductTests.test_late_credit_is_blocked_after_reversal) ... ok
+test_offline_reconnect_converges_then_credit (test_product.ProductTests.test_offline_reconnect_converges_then_credit) ... ok
+test_offline_refund_reaches_merchant_after_reconnect (test_product.ProductTests.test_offline_refund_reaches_merchant_after_reconnect) ... ok
+test_pending_then_new_100_then_original_refund (test_product.ProductTests.test_pending_then_new_100_then_original_refund) ... ok
+test_request_identity_and_state_survive_restart (test_product.ProductTests.test_request_identity_and_state_survive_restart) ... ok
+test_restart_recovers_credit_before_settlement (test_product.ProductTests.test_restart_recovers_credit_before_settlement) ... ok
+test_same_id_different_amount_is_conflict (test_product.ProductTests.test_same_id_different_amount_is_conflict) ... ok
+test_second_process_owner_is_rejected (test_product.ProductTests.test_second_process_owner_is_rejected) ... ok
+test_sweep_reports_only_changed_outcomes (test_product.ProductTests.test_sweep_reports_only_changed_outcomes) ... ok
+test_unknown_action_payment_and_network_validation (test_product.ProductTests.test_unknown_action_payment_and_network_validation) ... ok
+test_validation_minor_units_and_bounds (test_product.ProductTests.test_validation_minor_units_and_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 70 tests in 5.219s
+
+OK
